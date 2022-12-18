@@ -1,13 +1,16 @@
 :root{
     --blue-color:#2196f3;
     --black-color:#212121;
-    --gry-color:#757575;
+    --gray-color:#757575;
+    --gray-color-portfolio:#f5f4fa;
     --white-color:#ffffff;
 }
 body {
     font-family: "Roboto";
     color: var(--black-color);
+    font-weight: 400;
 }
+/*Index Page*/
 a {
     text-decoration: none;  
 }
@@ -41,11 +44,12 @@ top: 0px;
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-tel:hover,
-.contact-tel:focus {
+.contact-tel:focus
+ {
 color: var(--blue-color);
 }
 .contact-mail, .contact-tel {
-    color: var(--gry-color);
+    color: var(--gray-color);
     font-weight: 500;
     font-size: 14px;
 }
@@ -58,7 +62,6 @@ top: 80px;
 background: #2F303A;
 }
 .title{
-    
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -79,6 +82,11 @@ border-radius: 4px;
 color: var(--white-color);
 cursor: pointer;
 }
+.button:hover,
+.button:focus{
+    background-color:#033866; 
+}
+/*Group Section*/
 .group-title{
 font-weight: 700;
 font-size: 14px;
@@ -86,33 +94,33 @@ line-height: 16px;
 letter-spacing: 0.03em;
 }
 .group-paragraf{
-color: var(--gry-color);  
-font-weight: 400;
+color: var(--gray-color);  
 font-size: 14px;
 line-height: 171%;
 }
+/*What we do Section*/
 .subtitle-text{
 font-weight: 700;
 font-size: 36px;
 line-height: 85%;
 }
+/*Our team Section*/
 .person-name{
 font-weight: 500;
 font-size: 16px;
 line-height: 85%;
 }
 .occupation{
-color:var(--gry-color);
-font-weight: 400;
+color:var(--gray-color);
 font-size: 16px;
 line-height: 85%;
 }
+/*Footer Section*/
 address { 
     all: initial; 
 }
 .footer-section{
-    background-color:#2F303A;
-    font-weight: 400;    
+    background-color:#2F303A; 
 }
 .logo-footer {
     color: var(--white-color);
@@ -129,9 +137,43 @@ address {
     line-height: 85%;
     font-size: 14px;
 }
-.footer-mail, .footer-tel{
+.footer-mail, .footer-tel {
     line-height: 85%;
     font-size: 14px;
     color: hsla(0,0%,100%,60%);
-
 }
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus{
+    color: var(--blue-color);
+} 
+/*------------*/
+/*Portfolio Page*/
+  /*Buttons List Menu*/
+.list-buttons {
+    background-color: var(--gray-color-portfolio);
+    color:var(--black-color); 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    height:38px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.list-buttons:hover,
+.list-buttons:focus{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+  /*Projects Section*/
+.subtitle-projects{
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 200%; 
+}
+.project-scope{
+    font-size: 16px;
+    line-height: 188%;
+    color: var(--gray-color);
+}   
